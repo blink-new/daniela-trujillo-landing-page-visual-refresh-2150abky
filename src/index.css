@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700&family=Lora:ital,wght@0,400;0,500;1,400&family=Merriweather:ital,wght@0,300;0,400;1,300;1,400&family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Paleta Profesional Elige con Claridad */
+    --white-pure: 0 0% 100%; /* #FFFFFF - Fondo principal limpio */
+    --beige-ivory: 35 33% 97%; /* #FAF6F2 - Fondo suave y acogedor */
+    --orange-warm: 28 68% 51%; /* #D97E28 - Color acento potente */
+    --black-soft: 0 0% 18%; /* #2F2F2F - Texto principal fuerte */
+    --gray-light: 0 0% 91%; /* #E8E8E8 - Equilibrio visual */
+    --gray-medium: 0 0% 69%; /* #B0B0B0 - Contraste profesional */
+    --gray-smoke: 0 0% 29%; /* #4A4A4A - Gris oscuro elegante */
+    
+    /* Colores Pasteles para Servicios - Versiones más oscuras */
+    --celeste-pastel: 195 73% 50%; /* #4682B4 - Steel Blue más oscuro */
+    --azul-pastel: 210 100% 56%; /* #1E90FF - Dodger Blue más oscuro */
+    --lila-pastel: 270 50% 65%; /* #9370DB - Medium Purple más oscuro */
+    --rosado-pastel: 330 50% 85%; /* Rosado pastel alternativo para UMOM */
+    
+    /* Gris elegante para header */
+    --gray-elegant: 210 46% 30%; /* #294F70 - Gris elegante y profundo */
+    
+    /* Colores para subtítulo */
+    --pink-pastel: 330 50% 85%; /* #F0C2CC - Rosado pastel para U */
+    --yellow-pastel: 48 100% 67%; /* #FFD700 - Amarillo como las estrellitas */
+    
+    /* Aplicación según uso recomendado */
+    --background: 0 0% 100%; /* Blanco puro - Fondo general, espacios amplios */
+    --foreground: 0 0% 18%; /* Negro suave - Títulos, headers, frases con fuerza */
+    --card: 35 33% 97%; /* Beige marfil - Fondos de secciones */
+    --card-foreground: 0 0% 18%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 18%;
+    --primary: 28 68% 51%; /* Naranja cálido - Botones, íconos, CTAs */
+    --primary-foreground: 0 0% 100%;
+    --secondary: 0 0% 91%; /* Gris claro - Fondos secundarios, bordes */
+    --secondary-foreground: 0 0% 18%;
+    --muted: 35 33% 97%; /* Beige marfil - Bio, frases inspiradoras */
+    --muted-foreground: 0 0% 29%; /* Gris humo - Textos destacados */
+    --accent: 28 68% 51%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 91%; /* Gris claro - Separadores */
+    --input: 0 0% 91%; /* Gris claro - Formularios */
+    --ring: 28 68% 51%;
+    --chart-1: 28 68% 51%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    --radius: 0.5rem
+  ;
+    --sidebar-background: 0 0% 91%;
+    --sidebar-foreground: 0 0% 18%;
+    --sidebar-primary: 28 68% 51%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 0 0% 91%;
+    --sidebar-accent-foreground: 0 0% 18%;
+    --sidebar-border: 0 0% 91%;
+    --sidebar-ring: 28 68% 51%}
+
+  .dark {
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 240 5.9% 10%;
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+    --accent: 240 3.7% 15.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 240 4.9% 83.9%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%
+  ;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%}
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
